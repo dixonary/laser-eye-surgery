@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MidiJack;
 
 public class PartGen : MonoBehaviour {
 
@@ -35,7 +36,7 @@ public class PartGen : MonoBehaviour {
         Func<float> colRandom = (() => UnityEngine.Random.value * 1 - 0.5f);
         if (UnityEngine.Random.value > 0.5) {
             // lighter skin tones (http://johnthemathguy.blogspot.co.uk/2013/08/what-color-is-human-skin.html)
-            r = 224.3f + 9.6f* colRandom();
+            r = 235.3f + 9.6f* colRandom();
             g = 193.1f + 17f * colRandom();
             b = 177.6f + 21f * colRandom();
 
@@ -50,11 +51,12 @@ public class PartGen : MonoBehaviour {
         sr.color = new Color(r/255f,g/255f,b/255f);
         sr.transform.parent = transform;
 
-        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
         transform.localPosition = new Vector3(0.1f, 0.1f, 1.0f);
     }
 	
 	void Update () {
-		
-	}
+        var s = 25f / 127; //MidiMaster.GetKnob(21, 0.15f);
+        gameObject.transform.localScale = new Vector3(s,s,s);
+    }
 }
