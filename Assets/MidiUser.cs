@@ -12,6 +12,5 @@ public class MidiUser : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(MidiMaster.GetKnob(21));
 	}
 }
