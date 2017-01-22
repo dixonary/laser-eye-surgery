@@ -3,9 +3,69 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Renders" ID="{3BEAD839-BC28-46AA-9448-3818A3929DC0}" ShortID="477568984">
+				<Sound Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" ShortID="72524338" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" ShortID="72524338" Type="SoundFX">
+						<AudioFileSource Name="LaserEyeSurgery_Assets_wav_FleshSearLoop" ID="{FF29BF56-1246-4CCE-BF3E-27BCAE510C7A}" ShortID="52138214">
+							<Language>SFX</Language>
+							<AudioFile>Renders\LaserEyeSurgery_Assets_wav_FleshSearLoop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LaserEyeSurgery_Assets_wav_FleshSearLoop" ID="{FF29BF56-1246-4CCE-BF3E-27BCAE510C7A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="SearOrno" ID="{D6A3E211-6073-493B-8A71-1E45B9296549}" ShortID="15606738">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{13242FE1-AB89-4AFA-B137-86869839E15A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B0407F15-BC9A-45EC-A695-70E106D64211}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SearOrno2" ID="{B52D9C02-F512-4BF2-A3A6-B775CC07632E}" ShortID="1000448099" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
@@ -15,16 +75,251 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_FleshSearLoop" ID="{FF29BF56-1246-4CCE-BF3E-27BCAE510C7A}" ShortID="52138214">
-									<ReferenceList/>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno2" ID="{DB7359C1-BFA3-4B8D-BA1A-7FA2C6245909}" ShortID="321012734">
 									<Language>SFX</Language>
-									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_FleshSearLoop.wav</AudioFile>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno2.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="LaserEyeSurgery_Assets_wav_FleshSearLoop" ID="{FF29BF56-1246-4CCE-BF3E-27BCAE510C7A}" Platform="Linked"/>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno2" ID="{DB7359C1-BFA3-4B8D-BA1A-7FA2C6245909}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="SearOrno3" ID="{D931F85A-4161-406B-9E01-3F8FC519E1EE}" ShortID="156577427" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno3" ID="{BD641E08-F398-474F-9013-7A2DD67593EE}" ShortID="457644236">
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno3" ID="{BD641E08-F398-474F-9013-7A2DD67593EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SearOrno4" ID="{68C7CBC4-CE79-4ED9-A937-840493843038}" ShortID="340213058" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno4" ID="{A79BA325-2F80-4A48-AA2C-3C1065038E61}" ShortID="823169246">
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno4" ID="{A79BA325-2F80-4A48-AA2C-3C1065038E61}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SearOrno1" ID="{FEA1DB64-880D-46AA-982E-67CAB9BA6AB8}" ShortID="353435089" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno1" ID="{8AE805CB-2499-4EDB-B283-2118DB4FEB27}" ShortID="1024009313">
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno1" ID="{8AE805CB-2499-4EDB-B283-2118DB4FEB27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<ActorMixer Name="LaserLoop" ID="{261C3719-F732-4B11-BC79-7E05FE1EB4C1}" ShortID="1016691768">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{0B37F781-1957-4ACC-A7E9-3A5D50B9803D}" ShortID="737480432">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<Custom>
+												<ModulatorLfo Name="Modulator LFO (Custom)" ID="{6E021B64-4382-4C47-8D81-D76049E5DF43}" ShortID="967572884">
+													<PropertyList>
+														<Property Name="LfoFrequency" Type="Real64" Value="0.981"/>
+													</PropertyList>
+												</ModulatorLfo>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{008CA965-2D47-4326-A783-94C26FC49B7B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>53</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{26CF9A35-5719-4E71-922B-849D35E5F69B}" ShortID="399985943">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<Custom>
+												<ModulatorLfo Name="Modulator LFO (Custom)" ID="{BA0D4531-ABBA-4D2E-A56C-5F0E69048FC5}" ShortID="1028213016"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F08D01F7-ABD4-4B85-8835-35DDE839DBC5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-15</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="LaserLoopBuzz" ID="{1E5A49E9-6DC7-43A7-8B3E-72E4DA7B178C}" ShortID="894739393" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7677D22D-9A13-4A41-8B6B-5D75392D6A28}" ShortID="548200729">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="76"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.188821784289364"/>
+										<Property Name="LoopEnd" Type="Real64" Value="4.82646902281105"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7677D22D-9A13-4A41-8B6B-5D75392D6A28}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserLoopClicks" ID="{5E5BED01-6FA0-4FC6-90DA-F4D5AAC9F965}" ShortID="710725474" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserLoopClicks" ID="{E880209A-46BE-4E5C-878B-D4EC77891FC9}" ShortID="929218250">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.398650527118623"/>
+										<Property Name="LoopEnd" Type="Real64" Value="7.91321296330467"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_LaserLoopClicks" ID="{E880209A-46BE-4E5C-878B-D4EC77891FC9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserLoopBuzz_End" ID="{662F5667-5598-499C-A150-C8EB294BCB5B}" ShortID="750031627" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7364DCF4-F6BC-47FD-BF40-5215D9216884}" ShortID="294391593">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="4.86791770716726"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.84949606967561"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7364DCF4-F6BC-47FD-BF40-5215D9216884}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="LaserAlign" ID="{86C75D23-D57B-4591-8D47-054F6856598B}" ShortID="526110017">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<RandomSequenceContainer Name="LaserAlign_Lo" ID="{6778E4B6-321F-41E6-BA23-BC5BA320223C}" ShortID="266317105">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -145,6 +440,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine" ID="{A40F17D3-F42D-40A1-881C-6872AC94907D}" ShortID="185554031">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0805685131195335"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine.wav</AudioFile>
 										</AudioFileSource>
@@ -164,6 +462,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine" ID="{2B1BAA86-B018-4FF8-BF50-E1AF9616C0FF}" ShortID="230896023">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.111215591721921"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine.wav</AudioFile>
 										</AudioFileSource>
@@ -183,6 +484,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine" ID="{10502263-40B4-46BC-9324-6680A438372F}" ShortID="296184281">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.112684676040398"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine.wav</AudioFile>
 										</AudioFileSource>
@@ -193,21 +497,36 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SearOrno" ID="{D6A3E211-6073-493B-8A71-1E45B9296549}" ShortID="15606738">
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Ambience" ID="{84EAB5C5-CEBD-4DB4-954C-5E365FE9B895}" ShortID="1045689708">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="RoomTone" ID="{D13F6B26-71A2-4B55-84D3-F346F91C731A}" ShortID="771326075" Type="SoundFX">
 							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{13242FE1-AB89-4AFA-B137-86869839E15A}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>26</Value>
+									</ValueList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -218,137 +537,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SearOrno2" ID="{B52D9C02-F512-4BF2-A3A6-B775CC07632E}" ShortID="1000448099" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno2" ID="{DB7359C1-BFA3-4B8D-BA1A-7FA2C6245909}" ShortID="321012734">
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno2" ID="{DB7359C1-BFA3-4B8D-BA1A-7FA2C6245909}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SearOrno3" ID="{D931F85A-4161-406B-9E01-3F8FC519E1EE}" ShortID="156577427" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno3" ID="{BD641E08-F398-474F-9013-7A2DD67593EE}" ShortID="457644236">
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno3" ID="{BD641E08-F398-474F-9013-7A2DD67593EE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SearOrno4" ID="{68C7CBC4-CE79-4ED9-A937-840493843038}" ShortID="340213058" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno4" ID="{A79BA325-2F80-4A48-AA2C-3C1065038E61}" ShortID="823169246">
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno4.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno4" ID="{A79BA325-2F80-4A48-AA2C-3C1065038E61}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SearOrno1" ID="{FEA1DB64-880D-46AA-982E-67CAB9BA6AB8}" ShortID="353435089" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_SearOrno1" ID="{8AE805CB-2499-4EDB-B283-2118DB4FEB27}" ShortID="1024009313">
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_SearOrno1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_SearOrno1" ID="{8AE805CB-2499-4EDB-B283-2118DB4FEB27}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="Room Tone,Compressors,Fridges,Light" ID="{4B244233-7D26-4A2B-BD41-0A0B6B369EF9}" ShortID="90698274">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="171"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.1361157323689"/>
+										<Property Name="LoopEnd" Type="Real64" Value="68.0407088607595"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Room Tone,Compressors,Fridges,Light.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<ActorMixer Name="LaserLoop" ID="{261C3719-F732-4B11-BC79-7E05FE1EB4C1}" ShortID="1016691768">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="LaserLoopBuzz" ID="{1E5A49E9-6DC7-43A7-8B3E-72E4DA7B178C}" ShortID="894739393" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7677D22D-9A13-4A41-8B6B-5D75392D6A28}" ShortID="548200729">
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_LaserLoop" ID="{7677D22D-9A13-4A41-8B6B-5D75392D6A28}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="LaserLoopClicks" ID="{5E5BED01-6FA0-4FC6-90DA-F4D5AAC9F965}" ShortID="710725474" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_LaserLoopClicks" ID="{E880209A-46BE-4E5C-878B-D4EC77891FC9}" ShortID="929218250">
-											<ReferenceList/>
-											<Language>SFX</Language>
-											<AudioFile>Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="LaserEyeSurgery_Assets_wav_LaserLoopClicks" ID="{E880209A-46BE-4E5C-878B-D4EC77891FC9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
+							<ActiveSourceList>
+								<ActiveSource Name="Room Tone,Compressors,Fridges,Light" ID="{4B244233-7D26-4A2B-BD41-0A0B6B369EF9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-				</Folder>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
