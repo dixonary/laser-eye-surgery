@@ -13,7 +13,7 @@ public class PartGen : MonoBehaviour {
     String[] parts = { "arm", "leg" };
 
     void Start () {
-        
+
         var part = parts[(int)(UnityEngine.Random.value * parts.Length)];
         SpriteRenderer sr;
         Sprite res;
@@ -48,15 +48,29 @@ public class PartGen : MonoBehaviour {
             b =  96.7f + 26.3f * colRandom();
         }
 
-        sr.color = new Color(r/255f,g/255f,b/255f);
+        sr.color = new Color(r / 255f, g / 255f, b / 255f);
         sr.transform.parent = transform;
 
+        /* Must add polygon collider after sprite */
+        //var polygon = gameObject.AddComponent<PolygonCollider2D>();
+
+        var woundObject = new GameObject();
+        //woundObject.AddComponent<MeshFilter>(); // This might happen automatically because of Wound's RequireComponent?
+        var woundComponent = woundObject.AddComponent<Wound>();
+        woundComponent.partName = part;
+        //woundComponent.generateWoundWithin(polygon);
+
+        woundObject.transform.parent = transform;
+
         transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
-        transform.localPosition = new Vector3(0.1f, 0.1f, 1.0f);
+        transform.localPosition = new Vector3(0f, 0f, 1.0f);
     }
 	
 	void Update () {
-        var s = 25f / 127; //MidiMaster.GetKnob(21, 0.15f);
+        var s = /*25f / 127;*/ MidiMaster.GetKnob(21, 0.15f);
         gameObject.transform.localScale = new Vector3(s,s,s);
+        var r = /*25f / 127;*/ 10*MidiMaster.GetKnob(22, 0.15f);
+        //gameObject.transform.rotation = new Quaternion(0, 0, 1, r);
+        //Debug.Log((Camera.main.ScreenToWorldPoint(Input.mousePosition) / transform.localScale.x - transform.position).ToString());
     }
 }
