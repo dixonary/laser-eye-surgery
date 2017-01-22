@@ -275,6 +275,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EndMusic" ID="{20623EE7-A8EB-4058-B7F4-4F8487ADA177}">
+					<ChildrenList>
+						<Action Name="Play" ID="{103672A4-5E98-4EFB-AE82-FA8C829F7AB7}" ShortID="915540460" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8BD68C11-DE57-4209-BB94-616EE0837809}" Global="false">
+									<ObjectRef Name="EndMusic" ID="{C93FAE78-D012-4066-A439-D269D4AF4228}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set State" ID="{335FC0B5-748A-4FB9-B7D8-3B2A81AD755D}" ShortID="118571043" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="MusicStates" ID="{9FAE4950-5ECF-4957-B243-51585BE6BBF0}"/>
+								<GroupItem Name="First" ID="{CA5BE06E-9C4A-4A48-9896-1A6FD4F7B3CA}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -6,6 +6,7 @@
 				<SoundBank Name="MainSoundBank" ID="{67E54546-B765-4221-BDA8-0D71A7124021}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
