@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class InputControls : MonoBehaviour {
 
-    private static InputMode _inputMode;
+    private static InputMode _inputMode = InputMode.UNKNOWN;
     public static InputMode inputMode {
         get {
-            if (_inputMode == InputMode.UNKNOWN) {
-                var res = Tobii.EyeTracking.EyeTrackingHost.GetInstance().EyeTrackingDeviceStatus;
-                if (res == Tobii.EyeTracking.DeviceStatus.Pending || res == Tobii.EyeTracking.DeviceStatus.Tracking) {
-                    _inputMode = InputMode.EYES;
-                }
-                else _inputMode = InputMode.MOUSE;
+            var res = Tobii.EyeTracking.EyeTrackingHost.GetInstance().EyeTrackingDeviceStatus;
+            Debug.Log(res);
+            if (res == Tobii.EyeTracking.DeviceStatus.Pending || res == Tobii.EyeTracking.DeviceStatus.Tracking) {
+                return InputMode.EYES;
             }
-            return _inputMode;
+            else {
+                return InputMode.MOUSE;
+            }
         }
     }
 
 	// Use this for initialization
 	void Start () {
-        _inputMode = InputMode.UNKNOWN;
     }
 	
 	// Update is called once per frame
