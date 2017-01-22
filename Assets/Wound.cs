@@ -10,10 +10,16 @@ public class Wound : MonoBehaviour {
     public string partName;
     //MeshFilter _meshFilter;
     LineRenderer _line;
+
+    /* Wound generation */
     float _baseLineWidth = 0.01f;
     float _maxSplitsPerUnitLength = 2f;
     float _maxWobbleAmount = 1f;
-    float _minimumWoundLength = 2f;
+    float _minimumWoundLength = 4f;
+    List<Vector2> _woundLine;
+
+    /* Hitbox generation */
+    float _hbLength = 0.2f;
 
     Dictionary<string, List<Vector3>> _baseLines = new Dictionary<string, List<Vector3>>()
     {
@@ -37,13 +43,18 @@ public class Wound : MonoBehaviour {
 
     void Start () {
         //_meshFilter = GetComponent<MeshFilter>();
+
+        var _woundLine = wobblify(shorten(_baseLines[partName]));
+
         _line = GetComponent<LineRenderer>();
 
         _line.numPositions = _baseLines[partName].Count;
         _line.startColor = _line.endColor = Color.black;
-        _line.SetPositions(wobblify(shorten(_baseLines[partName])).ToArray());
+        _line.SetPositions(_woundLine.ToArray());
         _line.widthMultiplier = _baseLineWidth;
         _line.useWorldSpace = false;
+
+        void generateHitboxes();
 	}
 
     // Return a random shortening of a linestrip
@@ -138,7 +149,6 @@ public class Wound : MonoBehaviour {
         _line.widthMultiplier = _baseLineWidth * transform.localScale.x;
 
         /* Wound generation testing */
-        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var result = shorten(_baseLines[partName]);
@@ -152,7 +162,32 @@ public class Wound : MonoBehaviour {
             _line.numPositions = result.Count;
             _line.SetPositions(result.ToArray());
         }
-        */
 	}
-    
+
+    void generateHitboxes()
+    {
+        for (int i = 0; i < _woundLine.Count - 1; ++i)
+        {
+            var p = _woundLine[i]; var q = _woundLine[i + 1];
+
+            var l = q - p;
+            var lineLength = l.magnitude;
+            var numHbs = (int)(lineLength * 10) / (int)(_hbLength * 10);
+            if (numHbs < 1)
+            {
+                numHbs = 1;
+            }
+
+            //l.
+
+            var dr = l / numHbs;
+            for (int j = 0; j < numHbs; ++j)
+            {
+                var hb = new GameObject();
+                hb.AddComponent<WoundHitbox>();
+                hb.
+                hb.transform.parent = transform.parent;
+            }
+        }
+    }    
 }
