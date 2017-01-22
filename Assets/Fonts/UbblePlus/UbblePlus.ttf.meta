@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 381cb472ab968d04280bce7a5a1db3d1
+timeCreated: 1485062046
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UbblePlus
+  fontNames:
+  - UbblePlus
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
