@@ -1438,11 +1438,6 @@
 				</MusicSwitchContainer>
 				<MusicPlaylistContainer Name="TitleMusic" ID="{2E6AE3B2-73B5-4DFA-98BE-FBA0915A3923}" ShortID="344535081">
 					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>

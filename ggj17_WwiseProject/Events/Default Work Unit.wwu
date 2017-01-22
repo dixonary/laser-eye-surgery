@@ -305,7 +305,13 @@
 				</Event>
 				<Event Name="StopTitle" ID="{2B067459-C58E-48FB-85B7-3D8994D915D3}">
 					<ChildrenList>
-						<Action Name="Stop All" ID="{B3343F0C-2B73-4509-AED6-FF7954BD3F56}" ShortID="654841170" Type="Stop" Scope="All" Global="false"/>
+						<Action Name="Stop" ID="{DB48EBAC-F1FF-41A3-8022-4ECED75D52A6}" ShortID="895548910" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{46BFB0C9-2BA2-4572-BFDB-615761F9BECF}" Global="false">
+									<ObjectRef Name="TitleMusic" ID="{2E6AE3B2-73B5-4DFA-98BE-FBA0915A3923}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

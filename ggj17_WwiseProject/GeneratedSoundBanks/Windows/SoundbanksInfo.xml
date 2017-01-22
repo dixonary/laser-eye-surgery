@@ -22,6 +22,7 @@
 			<Path>MusicBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1681803181" Name="EndMusic" ObjectPath="\Events\Default Work Unit\EndMusic"/>
+				<Event Id="3805681205" Name="StopTitle" ObjectPath="\Events\Default Work Unit\StopTitle"/>
 				<Event Id="2191159630" Name="TitleMusic" ObjectPath="\Events\Default Work Unit\TitleMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

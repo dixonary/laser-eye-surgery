@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
 	2191159630	TitleMusic			\Default Work Unit\TitleMusic	
+	3805681205	StopTitle			\Default Work Unit\StopTitle	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3103015060	MusicStates			\Default Work Unit\MusicStates	

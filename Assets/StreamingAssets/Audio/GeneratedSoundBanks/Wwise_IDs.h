@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID LASERON = 3636387825U;
         static const AkUniqueID POP = 1081563622U;
         static const AkUniqueID STARTAMBIENCE = 1316191055U;
+        static const AkUniqueID STOPTITLE = 3805681205U;
         static const AkUniqueID TITLEMUSIC = 2191159630U;
     } // namespace EVENTS
 
