@@ -30,11 +30,15 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<ObjectRef Name="Ding" ID="{5C459EC8-B51A-40EC-A4DA-6768046BE080}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Ding" ID="{5C459EC8-B51A-40EC-A4DA-6768046BE080}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<ObjectRef Name="PopSound" ID="{7488BB0D-1C65-4037-847B-5E8260E8701B}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -69,11 +73,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="CompletedLimbs" ID="{E4615EA2-E753-4917-A033-0EF5DE05B823}"/>
-							<Value>7.41496598639456</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Combo" ID="{CB0A41A2-2D17-4C58-9DE2-FE3DF77B535A}"/>
-							<Value>12</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
