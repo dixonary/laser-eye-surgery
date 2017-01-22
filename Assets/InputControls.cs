@@ -1,22 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tobii.EyeTracking;
 
 public class InputControls : MonoBehaviour {
 
-    private static InputMode _inputMode = InputMode.UNKNOWN;
-    public static InputMode inputMode {
-        get {
-            var res = Tobii.EyeTracking.EyeTrackingHost.GetInstance().EyeTrackingDeviceStatus;
-            Debug.Log(res);
-            if (res == Tobii.EyeTracking.DeviceStatus.Pending || res == Tobii.EyeTracking.DeviceStatus.Tracking) {
-                return InputMode.EYES;
-            }
-            else {
-                return InputMode.MOUSE;
-            }
-        }
-    }
+    public static InputMode inputMode = InputMode.MOUSE;
+    private static GazePoint lastGP = new GazePoint(new Vector2(0,0),-1,Time.time);
 
 	// Use this for initialization
 	void Start () {
@@ -24,8 +14,27 @@ public class InputControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+    }
+
+    public static Vector2 getPosition() {
+        
+        switch (inputMode) {
+            case InputMode.MOUSE:
+                var mp = Input.mousePosition;
+                return new Vector2(mp.x / Screen.width, mp.y / Screen.height);
+            case InputMode.EYES:
+                var gp = EyeTracking.GetGazePoint();
+                if (gp.IsValid) {
+                    lastGP = gp;
+                    return gp.Viewport;
+                }
+                else return lastGP.Viewport;
+            case InputMode.UNKNOWN:
+                throw new System.Exception("Input mode is unknown!");
+        }
+        return new Vector2();
+
+    }
 }
 
 public enum InputMode { MOUSE, EYES, UNKNOWN }

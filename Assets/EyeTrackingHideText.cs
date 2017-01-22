@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tobii;
 
 public class EyeTrackingHideText : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class EyeTrackingHideText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        enabled = !(InputControls.inputMode == InputMode.EYES) ;
+        enabled = !(InputControls.inputMode == InputMode.EYES);
+        var res = Tobii.EyeTracking.EyeTrackingHost.GetInstance().EyeTrackingDeviceStatus;
+        Debug.Log(res);
     }
 }
