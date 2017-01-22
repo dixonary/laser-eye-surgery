@@ -16,6 +16,7 @@ public class SkinTrigger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D c) {
         AkSoundEngine.PostEvent("FleshOn", gameObject);
+        Debug.Log("body part in");
     }
 
     void OnTriggerStay2D(Collider2D c) {
@@ -24,6 +25,7 @@ public class SkinTrigger : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D c) {
         AkSoundEngine.PostEvent("FleshOff", gameObject);
+        Debug.Log("body part out");
     }
 
 

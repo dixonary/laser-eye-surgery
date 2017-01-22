@@ -13,6 +13,13 @@ public class LaserDrawer : MonoBehaviour {
     private Vector2 _avg;
     private Vector2 _lerpPoint;
 
+    private float _topMax = 10f/127;
+    private float _botMax = 35f / 127;
+    private float _topCurrent = 0f;
+    private float _botCurrent = 0f;
+
+    public bool _active = false;
+
     /* Aim circle */
     GameObject _aimObject;
     public float _aimRadius = 0.001f;
@@ -36,8 +43,18 @@ public class LaserDrawer : MonoBehaviour {
     void FixedUpdate() {
         var knobOne = 43f / 127;   //MidiMaster.GetKnob(21, 0);
         var knobTwo = 5f / 127;    //MidiMaster.GetKnob(22, 0.5f);
-        var knobThree = 35f / 127; //MidiMaster.GetKnob(23, 0.5f);
-        var knobFour = 10f / 127;  //MidiMaster.GetKnob(24, 0.25f);
+        //var knobThree = 35f / 127; //MidiMaster.GetKnob(23, 0.5f);
+        //var knobFour = 10f / 127;  //MidiMaster.GetKnob(24, 0.25f);
+
+        if(_active) {
+            _topCurrent = Mathf.Min(_topCurrent + Time.deltaTime * 2, _topMax);
+            _botCurrent = Mathf.Min(_botCurrent + Time.deltaTime * 2, _botMax);
+        }
+        else {
+            _topCurrent = Mathf.Max(_topCurrent - Time.deltaTime * 2, 0);
+            _botCurrent = Mathf.Max(_botCurrent - Time.deltaTime * 2, 0);
+        }
+
 
         int actualLen = (int)(1 + 2 * knobTwo * _movingAverageLen);
 
@@ -70,11 +87,11 @@ public class LaserDrawer : MonoBehaviour {
 
         var distance = lerpViewpoint - centerPoint;
         var normDist = distance.normalized;
-        var farDiam = 0.1f * knobFour * (1 - lerpViewpoint.y * 0.5f);
+        var farDiam = 0.1f * _topCurrent * (1 - lerpViewpoint.y * 0.5f);
         var angle = Mathf.Atan2(distance.y, distance.x) - Mathf.PI / 2;
 
-        var leftPoint = new Vector2(centerPoint.x - (0.1f * knobThree) / Mathf.Max(0.2f, Mathf.Cos(angle)), centerPoint.y);
-        var rightPoint = new Vector2(centerPoint.x + (0.1f * knobThree) / Mathf.Max(0.2f, Mathf.Cos(angle)), centerPoint.y);
+        var leftPoint = new Vector2(centerPoint.x - (0.1f * _botCurrent) / Mathf.Max(0.2f, Mathf.Cos(angle)), centerPoint.y);
+        var rightPoint = new Vector2(centerPoint.x + (0.1f * _botCurrent) / Mathf.Max(0.2f, Mathf.Cos(angle)), centerPoint.y);
 
 
         var farRightPoint = new Vector2(lerpViewpoint.x + normDist.y * farDiam, lerpViewpoint.y - normDist.x * farDiam);
@@ -100,6 +117,18 @@ public class LaserDrawer : MonoBehaviour {
     void updateHitbox(Vector2 p)
     {
         _aimObject.transform.position = p;
+    }
+
+    public void Activate() {
+        if (_active) return;
+        _active = true;
+        AkSoundEngine.PostEvent("LaserOn", this.gameObject);
+    }
+
+    public void Deactivate() {
+        if (!_active) return;
+        AkSoundEngine.PostEvent("LaserOff", this.gameObject);
+        _active = false;
     }
 }
 

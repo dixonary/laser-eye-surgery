@@ -12,7 +12,7 @@ public class ScrollBG : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         var rect = _image.uvRect;
         rect.x += 0.005f;
         rect.y += 0.005f;

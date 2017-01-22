@@ -7,7 +7,7 @@ public class ConveyorAnim : MonoBehaviour {
     float timeTracker = 0f;
     int animStep = 0;
     float animTickLength = 0.1f;
-    bool running = true;
+    bool running = false;
 
     GameObject bg;
     GameObject[] lines;
@@ -52,12 +52,17 @@ public class ConveyorAnim : MonoBehaviour {
     }
 
     public void RunAnimation() {
+        if (running) return;
         timeTracker = animTickLength;
         Step();
         running = true;
+        GameObject.Find("LaserPointer").GetComponent<LaserDrawer>().Deactivate();
+        AkSoundEngine.PostEvent("ConvOn", gameObject);
     }
 
     public void StopAnimation() {
+        if (!running) return;
         running = false;
+        AkSoundEngine.PostEvent("ConvOff", gameObject);
     }
 }

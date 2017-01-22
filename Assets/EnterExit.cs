@@ -6,11 +6,11 @@ public class EnterExit : MonoBehaviour {
 
     float _targetX = 0f;
     public float speed = 10f;
-    float initialPosition = Camera.main.aspect + 2.5f;
+    float initialPosition;
 
     // Use this for initialization
     void Start () {
-
+        initialPosition = Camera.main.aspect + 2.5f;
         transform.localPosition =  new Vector3(initialPosition, 0f, 1f);
 	}
 	
@@ -25,6 +25,9 @@ public class EnterExit : MonoBehaviour {
         if (transform.localPosition.x < _targetX) { 
             transform.localPosition = new Vector3(_targetX, 0f, 1f);
             GameObject.Find("Conveyor").GetComponent<ConveyorAnim>().StopAnimation();
+            if(_targetX == 0f) {
+                GameObject.Find("LaserPointer").GetComponent<LaserDrawer>().Activate();
+            }
 
         }
 

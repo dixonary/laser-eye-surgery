@@ -28,6 +28,7 @@ public class EyeButton : MonoBehaviour {
                 _ticker += Time.deltaTime;
                 if (_ticker > _maxTime) {
                     InputControls.inputMode = InputMode.EYES;
+                    //AkSoundEngine.PostEvent("StopTitle", gameObject);
                     SceneManager.LoadScene("ggj17");
                 }
             }

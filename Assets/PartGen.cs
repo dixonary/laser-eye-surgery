@@ -21,16 +21,13 @@ public class PartGen : MonoBehaviour {
         lines = new GameObject();
         sr = lines.AddComponent<SpriteRenderer>();
         res = Resources.Load<Sprite>("Images/" + part + "_lines");
-        Debug.Log(res);
         sr.sprite = res;
         sr.transform.parent = transform;
 
 
         skin = new GameObject();
         sr = skin.AddComponent<SpriteRenderer>();
-        skin.AddComponent<SkinTrigger>();
-        res = Resources.Load<Sprite>("Images/"+part + "_colour");
-        Debug.Log(res);
+        res = Resources.Load<Sprite>("Images/"+part + "_colour");;
         sr.sprite = res;
 
         float r, g, b;
@@ -54,8 +51,9 @@ public class PartGen : MonoBehaviour {
         sr.transform.localPosition = new Vector3(sr.transform.localPosition.x, sr.transform.localPosition.y, sr.transform.localPosition.z + 0.11f);
 
         /* Must add polygon collider after sprite */
-        var polygon = gameObject.AddComponent<PolygonCollider2D>();
-        gameObject.AddComponent<Rigidbody2D>().isKinematic = true ;
+        var polygon = skin.AddComponent<PolygonCollider2D>();
+        skin.AddComponent<Rigidbody2D>().isKinematic = true;
+        skin.AddComponent<SkinTrigger>();
 
         var woundObject = new GameObject();
         woundObject.transform.parent = transform;

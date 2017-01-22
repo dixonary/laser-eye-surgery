@@ -12,10 +12,12 @@ public class Wound : MonoBehaviour {
     LineRenderer _line;
 
     /* Wound generation */
+    //values set in Start()
     float _baseLineWidth = 0.01f;
-    float _maxSplitsPerUnitLength = 2f;
-    float _maxWobbleAmount = 1f;
-    float _minimumWoundLength = 4f;
+    public static float _maxSplitsPerUnitLength;
+    public static float _maxWobbleAmount;
+    public static float _minimumWoundLength;
+    public static int    _splitsMod;
     List<Vector3> _woundLine;
 
     /* Hitbox generation */
@@ -46,6 +48,10 @@ public class Wound : MonoBehaviour {
     List<Vector3> lastShorten;
 
     void Start () {
+        Wound._maxSplitsPerUnitLength = 1.5f;
+        Wound._maxWobbleAmount = 1f;
+        Wound._minimumWoundLength = 4f;
+        Wound._splitsMod = 0;
         //_meshFilter = GetComponent<MeshFilter>();
 
         _woundLine = wobblify(shorten(_baseLines[partName]));
@@ -112,7 +118,7 @@ public class Wound : MonoBehaviour {
     {
         var result = new List<Vector3>();
 
-        Debug.Log("Num Edges: " + (lineStrip.Count-1).ToString());
+        //Debug.Log("Num Edges: " + (lineStrip.Count-1).ToString());
         for (int i = 0; i < lineStrip.Count - 1; ++i)
         {
             var p = lineStrip[i]; var q = lineStrip[i + 1];
@@ -120,10 +126,10 @@ public class Wound : MonoBehaviour {
             var length = l.magnitude;
             var perp = new Vector3(-l.y, l.x).normalized;
 
-            int numPoints = 2 + r.Next(0,(int)Math.Round(length*_maxSplitsPerUnitLength));
+            int numPoints = 2 + r.Next(_splitsMod, (int)Math.Round(length*_maxSplitsPerUnitLength)+_splitsMod);
             float pointSpacingRatio = 1f / (numPoints - 1f);
 
-            Debug.Log("Num Points: " + numPoints.ToString());
+            //Debug.Log("Num Points: " + numPoints.ToString());
             // add first to n-1th point
             for (int j = 0; j < numPoints - 1; ++j)
             {

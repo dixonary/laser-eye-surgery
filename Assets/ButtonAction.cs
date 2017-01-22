@@ -16,6 +16,7 @@ public class ButtonAction : MonoBehaviour {
 	}
 
     public void OnClick() {
+        //AkSoundEngine.PostEvent("StopTitle", gameObject);
         SceneManager.LoadScene("ggj17");
     }
 }
