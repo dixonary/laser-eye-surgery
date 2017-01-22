@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //[RequireComponent(typeof(MeshFilter))]
-[RequireComponent(typeof(LineRenderer))]
+//[RequireComponent(typeof(LineRenderer))]
 public class Wound : MonoBehaviour {
-
+    
     public string partName;
     //MeshFilter _meshFilter;
     LineRenderer _line;
@@ -20,7 +20,10 @@ public class Wound : MonoBehaviour {
 
     /* Hitbox generation */
     float _hbLength = 0.2f;
-    List<WoundHitbox> _hitboxes = new List<WoundHitbox>();
+
+    public List<WoundHitbox> hitboxes = new List<WoundHitbox>();
+
+    System.Random r = new System.Random();
 
     Dictionary<string, List<Vector3>> _baseLines = new Dictionary<string, List<Vector3>>()
     {
@@ -47,13 +50,13 @@ public class Wound : MonoBehaviour {
 
         _woundLine = wobblify(shorten(_baseLines[partName]));
 
-        _line = GetComponent<LineRenderer>();
+        /*_line = GetComponent<LineRenderer>();
 
         _line.numPositions = _woundLine.Count;
         _line.startColor = _line.endColor = Color.black;
         //_line.SetPositions(_woundLine.ToArray());
         _line.widthMultiplier = _baseLineWidth;
-        _line.useWorldSpace = false;
+        _line.useWorldSpace = false;*/
 
         generateHitboxes();
 	}
@@ -62,7 +65,6 @@ public class Wound : MonoBehaviour {
     List<Vector3> shorten(List<Vector3> lineStrip)
     {
         var result = new List<Vector3>();
-        System.Random r = new System.Random();
 
         // calculate length of linestrip
         float totalLength = 0;
@@ -109,7 +111,6 @@ public class Wound : MonoBehaviour {
     List<Vector3> wobblify(List<Vector3> lineStrip)
     {
         var result = new List<Vector3>();
-        System.Random r = new System.Random();
 
         Debug.Log("Num Edges: " + (lineStrip.Count-1).ToString());
         for (int i = 0; i < lineStrip.Count - 1; ++i)
@@ -147,9 +148,10 @@ public class Wound : MonoBehaviour {
     }
 	
 	void Update () {
-        _line.widthMultiplier = _baseLineWidth * transform.localScale.x;
+        //_line.widthMultiplier = _baseLineWidth * transform.localScale.x;
 
         /* Wound generation testing */
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var result = shorten(_baseLines[partName]);
@@ -163,6 +165,7 @@ public class Wound : MonoBehaviour {
             _line.numPositions = result.Count;
             _line.SetPositions(result.ToArray());
         }
+        */
 	}
 
     void generateHitboxes()
@@ -194,7 +197,7 @@ public class Wound : MonoBehaviour {
                 hb.transform.localPosition = pos;
                 hb.transform.localScale = new Vector3(lineLength / numHbs, 0.1f, 1);
                 hb.transform.localEulerAngles = new Vector3(0, 0, angle);
-                _hitboxes.Add(whb);
+                hitboxes.Add(whb);
             }
         }
     }    

@@ -7,6 +7,7 @@ public class ConveyorAnim : MonoBehaviour {
     float timeTracker = 0f;
     int animStep = 0;
     float animTickLength = 0.1f;
+    bool running = true;
 
     GameObject bg;
     GameObject[] lines;
@@ -30,28 +31,33 @@ public class ConveyorAnim : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(animStep != 0) {
-            timeTracker += Time.deltaTime;
-            while(timeTracker >= animTickLength) {
-                timeTracker -= animTickLength;
-                animStep++;
-                animStep %= lines.Length;
-                if(animStep == 0) {
-                    timeTracker = 0;
-                    break;
-                }
+        timeTracker -= Time.deltaTime;
+        if (running) {
+            while (timeTracker <= 0) {
+                timeTracker += animTickLength;
+                Step();
             }
+        }
+        else {
+            timeTracker = 0;
         }
         for (var i = 0; i < lines.Length; i++) {
             lines[i].GetComponent<Renderer>().enabled = i == animStep ;
         }
-
-        if(Input.GetKeyDown(KeyCode.S)) {
-            RunAnimation();
-        }
 	}
 
+    void Step() {
+        animStep++;
+        animStep %= lines.Length;
+    }
+
     public void RunAnimation() {
-        animStep = 1;
+        timeTracker = animTickLength;
+        Step();
+        running = true;
+    }
+
+    public void StopAnimation() {
+        running = false;
     }
 }

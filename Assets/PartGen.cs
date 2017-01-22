@@ -28,6 +28,7 @@ public class PartGen : MonoBehaviour {
 
         skin = new GameObject();
         sr = skin.AddComponent<SpriteRenderer>();
+        skin.AddComponent<SkinTrigger>();
         res = Resources.Load<Sprite>("Images/"+part + "_colour");
         Debug.Log(res);
         sr.sprite = res;
@@ -50,9 +51,11 @@ public class PartGen : MonoBehaviour {
 
         sr.color = new Color(r / 255f, g / 255f, b / 255f);
         sr.transform.parent = transform;
+        sr.transform.localPosition = new Vector3(sr.transform.localPosition.x, sr.transform.localPosition.y, sr.transform.localPosition.z + 0.11f);
 
         /* Must add polygon collider after sprite */
-        //var polygon = gameObject.AddComponent<PolygonCollider2D>();
+        var polygon = gameObject.AddComponent<PolygonCollider2D>();
+        gameObject.AddComponent<Rigidbody2D>().isKinematic = true ;
 
         var woundObject = new GameObject();
         woundObject.transform.parent = transform;
@@ -63,7 +66,8 @@ public class PartGen : MonoBehaviour {
 
 
         transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
-        transform.localPosition = new Vector3(0f, 0f, 1.0f);
+        //transform.localPosition = new Vector3(0f, 0f, 1.0f);
+        gameObject.transform.localRotation = Quaternion.Euler(0, 0, (UnityEngine.Random.value - 0.5f) * 40);
     }
 	
 	void Update () {
@@ -71,6 +75,5 @@ public class PartGen : MonoBehaviour {
         gameObject.transform.localScale = new Vector3(s,s,s);
         var r = /*25f / 127;*/ 10*MidiMaster.GetKnob(22, 0.15f);
         //gameObject.transform.rotation = new Quaternion(0, 0, 1, r);
-        //Debug.Log((Camera.main.ScreenToWorldPoint(Input.mousePosition) / transform.localScale.x - transform.position).ToString());
     }
 }

@@ -30,11 +30,12 @@ public class WoundHitbox : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger enter");
         if(!_hit)
         {
             var spr = GetComponent<SpriteRenderer>();
-            spr.material.color = new Color(0f, 1f, 0f, 0.5f);
+            spr.material.color = new Color(0.0f, 0f, 0f, 0.2f);
+            spr.transform.localScale = new Vector3(spr.transform.localScale.x, spr.transform.localScale.y / 2, spr.transform.localScale.z);
+            _hit = true;
         }
     }
 
