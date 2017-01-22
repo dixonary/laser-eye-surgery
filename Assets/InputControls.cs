@@ -7,7 +7,7 @@ public class InputControls : MonoBehaviour {
     private static InputMode _inputMode;
     public static InputMode inputMode {
         get {
-            if (inputMode == InputMode.UNKNOWN) {
+            if (_inputMode == InputMode.UNKNOWN) {
                 var res = Tobii.EyeTracking.EyeTrackingHost.GetInstance().EyeTrackingDeviceStatus;
                 if (res == Tobii.EyeTracking.DeviceStatus.Pending || res == Tobii.EyeTracking.DeviceStatus.Tracking) {
                     _inputMode = InputMode.EYES;
