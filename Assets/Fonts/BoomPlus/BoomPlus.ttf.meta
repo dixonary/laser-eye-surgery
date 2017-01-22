@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 29d5ef4767f638f488224d8e3225127f
+timeCreated: 1485034674
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BoomPlus
+  fontNames:
+  - BoomPlus
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

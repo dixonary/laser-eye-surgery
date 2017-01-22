@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 61c2ae8af7afd054ba0e6390c17530fa
+timeCreated: 1485034674
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CDEF
+  fontNames:
+  - CDEF
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
