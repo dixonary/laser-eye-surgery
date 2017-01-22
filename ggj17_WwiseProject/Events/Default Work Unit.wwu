@@ -59,20 +59,6 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Play" ID="{B42B6FDC-1C6D-41C9-90D3-FF4A94DC71E5}" ShortID="644358338" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{1786DA31-68C8-42D9-B607-7C66D07FF311}" Global="false">
-									<ObjectRef Name="SearOrno" ID="{D6A3E211-6073-493B-8A71-1E45B9296549}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Play" ID="{A69ECC22-9D3B-4A65-AFEF-38EBD925394C}" ShortID="947159117" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{3FEB552B-6390-46C9-9A56-443DBFD98484}" Global="false">
-									<ObjectRef Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
-								</Element>
-							</ElementList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="LaserOff" ID="{6CC43D1B-9184-40F6-891B-B185C8877E70}">
@@ -144,6 +130,42 @@
 							<ElementList>
 								<Element ID="{59ACB1EF-5728-4323-BFCB-AD8A7B26B138}" Global="false">
 									<ObjectRef Name="RoomTone" ID="{D13F6B26-71A2-4B55-84D3-F346F91C731A}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FleshOn" ID="{C494C34C-612C-47C1-A91C-7A1803562AA1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FA5FA67D-2D3D-4566-90AB-1625C5B8E655}" ShortID="887029741" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FD1F1C33-79A2-429C-AC3C-18C1A6C16EAA}" Global="false">
+									<ObjectRef Name="SearOrno" ID="{D6A3E211-6073-493B-8A71-1E45B9296549}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{CAE236B9-7BD6-4F2E-9EC0-A249D4FDE4BD}" ShortID="298423879" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9EDC58D3-9821-40BB-BF74-79BEB9476222}" Global="false">
+									<ObjectRef Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FleshOff" ID="{75567826-3954-4D7B-84E2-A42D5CA71BF8}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{59FD7C15-A5C2-4D8C-A992-01BD7BA5AD4D}" ShortID="331208177" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B0654EA3-C043-46C2-9823-1F1E6FBC42B5}" Global="false">
+									<ObjectRef Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{7296DB31-51B6-431A-9431-FA2244BA900C}" ShortID="1014368455" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E7739FE-371A-4469-9D8A-48594B4014BD}" Global="false">
+									<ObjectRef Name="SearOrno" ID="{D6A3E211-6073-493B-8A71-1E45B9296549}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
 								</Element>
 							</ElementList>
 						</Action>

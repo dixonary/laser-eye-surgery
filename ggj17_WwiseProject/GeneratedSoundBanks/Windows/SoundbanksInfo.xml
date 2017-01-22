@@ -16,6 +16,8 @@
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2613220256" Name="FleshOff" ObjectPath="\Events\Default Work Unit\FleshOff"/>
+				<Event Id="146280682" Name="FleshOn" ObjectPath="\Events\Default Work Unit\FleshOn"/>
 				<Event Id="763008157" Name="LaserOff" ObjectPath="\Events\Default Work Unit\LaserOff"/>
 				<Event Id="3636387825" Name="LaserOn" ObjectPath="\Events\Default Work Unit\LaserOn"/>
 				<Event Id="1316191055" Name="StartAmbience" ObjectPath="\Events\Default Work Unit\StartAmbience"/>
@@ -23,11 +25,11 @@
 			<IncludedMemoryFiles>
 				<File Id="52138214" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_FleshSearLoop.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_FleshSearLoop_9E69E797.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_FleshSearLoop_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="90698274" Language="SFX">
 					<ShortName>Room Tone,Compressors,Fridges,Light.wav</ShortName>
-					<Path>SFX/Room Tone,Compressors,Fridges,Light_49E66536.wem</Path>
+					<Path>SFX/Room Tone,Compressors,Fridges,Light_9A064572.wem</Path>
 				</File>
 				<File Id="141200989" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_LoWhine.wav</ShortName>
@@ -39,19 +41,19 @@
 				</File>
 				<File Id="185554031" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine_79B32B16.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine_F4DAC3C3.wem</Path>
 				</File>
 				<File Id="230896023" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine_D03C8301.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine_9A45E50D.wem</Path>
 				</File>
 				<File Id="294391593" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoop_FCA179F7.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoop_361E6F44.wem</Path>
 				</File>
 				<File Id="296184281" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine_F47E0280.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine_1169A9BC.wem</Path>
 				</File>
 				<File Id="321012734" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno2.wav</ShortName>
@@ -67,7 +69,7 @@
 				</File>
 				<File Id="548200729" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoop_D884FEA6.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoop_F3EFF415.wem</Path>
 				</File>
 				<File Id="823169246" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno4.wav</ShortName>
@@ -75,7 +77,7 @@
 				</File>
 				<File Id="929218250" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks.wav</ShortName>
-					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoopClicks_EE225977.wem</Path>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoopClicks_F4CEC172.wem</Path>
 				</File>
 				<File Id="1024009313" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno1.wav</ShortName>
