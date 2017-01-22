@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1081563622	Pop			\Default Work Unit\Pop	
 	1316191055	StartAmbience			\Default Work Unit\StartAmbience	
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
+	2191159630	TitleMusic			\Default Work Unit\TitleMusic	
 	2396968165	Ding			\Default Work Unit\Ding	
 	2613220256	FleshOff			\Default Work Unit\FleshOff	
 	2665135698	ConvOff			\Default Work Unit\ConvOff	
@@ -21,6 +22,7 @@ State	ID	Name	State Group			Notes
 	3476314365	Second	MusicStates			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	308635872	Progress			\Default Work Unit\Progress	
 	1389571455	CompletedLimbs			\Default Work Unit\CompletedLimbs	
 	2333396925	Combo			\Default Work Unit\Combo	
 
@@ -55,6 +57,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	719683217	LaserEyeSurgery_Assets_wav_ConvStop2	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_ConvStop2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvStop\LaserEyeSurgery_Assets_wav_ConvStop2		69904
 	823169246	SearOrno4	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\Renders\LaserEyeSurgery_Assets_wav_SearOrno4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flesh\SearOrno\SearOrno4		128116
 	929218250	LaserLoopClicks	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks_F4CEC172.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserLoop\LaserLoopClicks		3888932
+	963156881	LaserEyeSurgery_Assets_wav_Theme	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_Theme_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\TitleMusic\MainLoop\LaserEyeSurgery_Assets_wav_Theme		6474028
 	977052051	LaserEyeSurgery_Assets_wav_ConvStart1	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_ConvStart1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvStart\LaserEyeSurgery_Assets_wav_ConvStart1		79880
 	1008571816	LaserEyeSurgery_Assets_wav_ConvScrape3	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_ConvScrape3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvScrapeOrno\LaserEyeSurgery_Assets_wav_ConvScrape3		199984
 	1017055224	LaserEyeSurgery_Assets_wav_ConvButton2	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_ConvButton2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvButton\LaserEyeSurgery_Assets_wav_ConvButton2		62956

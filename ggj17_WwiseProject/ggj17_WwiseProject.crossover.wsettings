@@ -34,12 +34,14 @@
 				<Property Name="Interactive Music\{A7D917FD-407B-452A-A0B5-DF49408D4138} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1J/5BW/tUNAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\{BB8DF611-56E3-4FC1-8BDB-E35F860A0481} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP1J/5BW/tUNAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\{D47B6703-1D83-495E-BBBC-0DCC76C8A7C1} - SegmentEditorZoomInfo" Type="string" Value="AgAACLqGhEAAAAAAAADwPyda2afBQURAAAAAAAAA8D8AAAAAYJnpQAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\{ED6851AA-9634-475F-B6AB-07FD215EB7FF} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4I00Xdoiz5AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\Watches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
+				<Property Name="Music Transition List\{2E6AE3B2-73B5-4DFA-98BE-FBA0915A3923}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{342B6DBF-DBB5-4F70-866B-12B2E575DE36}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{47CBE2B8-7ECF-43BE-8FCC-83623BB380FE}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{9AD25F23-9EA1-4893-B307-A2DB065156D8}\Expand States" Type="string" Value=""/>

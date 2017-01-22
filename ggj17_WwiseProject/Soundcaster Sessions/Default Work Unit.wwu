@@ -41,6 +41,10 @@
 							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="4" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="EndMusic" ID="{20623EE7-A8EB-4058-B7F4-4F8487ADA177}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="4" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -73,6 +77,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="CompletedLimbs" ID="{E4615EA2-E753-4917-A033-0EF5DE05B823}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Progress" ID="{F69FEA3C-8C24-4958-9E69-8DD95E306B0C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>

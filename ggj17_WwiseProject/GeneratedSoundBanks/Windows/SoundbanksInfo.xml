@@ -26,6 +26,7 @@
 				<Event Id="3636387825" Name="LaserOn" ObjectPath="\Events\Default Work Unit\LaserOn"/>
 				<Event Id="1081563622" Name="Pop" ObjectPath="\Events\Default Work Unit\Pop"/>
 				<Event Id="1316191055" Name="StartAmbience" ObjectPath="\Events\Default Work Unit\StartAmbience"/>
+				<Event Id="2191159630" Name="TitleMusic" ObjectPath="\Events\Default Work Unit\TitleMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9437697" Language="SFX">
@@ -131,6 +132,10 @@
 				<File Id="929218250" Language="SFX">
 					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks.wav</ShortName>
 					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoopClicks_F4CEC172.wem</Path>
+				</File>
+				<File Id="963156881" Language="SFX">
+					<ShortName>LaserEyeSurgery_Assets_wav_Theme.wav</ShortName>
+					<Path>SFX/LaserEyeSurgery_Assets_wav_Theme_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="977052051" Language="SFX">
 					<ShortName>LaserEyeSurgery_Assets_wav_ConvStart1.wav</ShortName>
