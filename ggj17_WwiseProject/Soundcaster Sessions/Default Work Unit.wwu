@@ -105,7 +105,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="First" ID="{CA5BE06E-9C4A-4A48-9896-1A6FD4F7B3CA}"/>
+						<CurrentStateRef Name="Final" ID="{BCAC05FA-C6A5-4320-AD33-1DAE6AE6AA2E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
