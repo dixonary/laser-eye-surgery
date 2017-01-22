@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{20709885-7F5B-474B-AC2D-0D20FB109941}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\GGJ2017Files\Ambience"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Sound &amp; Music Projects\2017\LaserEyeSurgery_Assets\Renders"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>

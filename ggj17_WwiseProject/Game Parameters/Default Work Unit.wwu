@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8A01E602-EA28-446A-99A8-3ACCCEFBB618}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8A01E602-EA28-446A-99A8-3ACCCEFBB618}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8A01E602-EA28-446A-99A8-3ACCCEFBB618}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CompletedLimbs" ID="{E4615EA2-E753-4917-A033-0EF5DE05B823}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Combo" ID="{CB0A41A2-2D17-4C58-9DE2-FE3DF77B535A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="12"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -561,6 +561,489 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<RandomSequenceContainer Name="ConvScrapeOrno" ID="{5988BA3C-2B0F-4714-B36B-2E9BA3774688}" ShortID="297654772">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1F696CB2-B706-4DBA-B097-F7CF53846A53}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B736EB3F-829D-4A03-84BC-11C2B6AE597E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="LaserEyeSurgery_Assets_wav_ConvScrape1" ID="{92334B07-B508-47EB-B404-A9FB16E00890}" ShortID="40116186" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvScrape1" ID="{F263CE88-E146-4EC2-9DD6-C6C2E2E7A844}" ShortID="646260517">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_ConvScrape1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvScrape1" ID="{F263CE88-E146-4EC2-9DD6-C6C2E2E7A844}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserEyeSurgery_Assets_wav_ConvScrape2" ID="{52A684BD-E7D5-49CA-914B-5D23150C50A4}" ShortID="435152901" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvScrape2" ID="{1BD358B5-336B-43EB-9162-EFB31CA3E83E}" ShortID="83576960">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_ConvScrape2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvScrape2" ID="{1BD358B5-336B-43EB-9162-EFB31CA3E83E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserEyeSurgery_Assets_wav_ConvScrape3" ID="{9E5BE2FD-69C8-45FE-A4CB-B20B6ADB7C3C}" ShortID="873344212" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvScrape3" ID="{AFE6C4EE-3EB9-458A-95C2-8F76C056853D}" ShortID="1008571816">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_ConvScrape3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvScrape3" ID="{AFE6C4EE-3EB9-458A-95C2-8F76C056853D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserEyeSurgery_Assets_wav_ConvScrape4" ID="{1DE76A0C-2A79-4C36-A8C9-7CB6EF7E4E40}" ShortID="299757084" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvScrape4" ID="{A3A754A0-FFEF-4AD7-82AE-907241908127}" ShortID="175491009">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_ConvScrape4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvScrape4" ID="{A3A754A0-FFEF-4AD7-82AE-907241908127}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="LaserEyeSurgery_Assets_wav_ConvScrape5" ID="{33CB6395-9978-4086-AAC5-B63976307553}" ShortID="1024027531" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvScrape5" ID="{000FA129-C962-4CEE-988E-79678DAD46EC}" ShortID="311706109">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_ConvScrape5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvScrape5" ID="{000FA129-C962-4CEE-988E-79678DAD46EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="ConvBeltLoop" ID="{E016B86F-E6D2-42F1-96A3-A16B3EEBE47F}" ShortID="604511828" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvBelt" ID="{07EEE149-803F-4D9B-995C-110BE981538E}" ShortID="488836423">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="67"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.120495421797411"/>
+								<Property Name="LoopEnd" Type="Real64" Value="9.38142926851271"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>LaserEyeSurgery_Assets_wav_ConvBelt.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvBelt" ID="{07EEE149-803F-4D9B-995C-110BE981538E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<ActorMixer Name="ConvButtons" ID="{2330CBD3-18EA-47BA-9C1D-1AB9DD105467}" ShortID="797187462">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="ConvStart" ID="{0F91C9F7-FA78-4E3D-AFEA-A994442B1449}" ShortID="499811755">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvStart1" ID="{40EFAFE3-2078-408D-AFC6-45F4ABC35AD1}" ShortID="809401404" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvStart1" ID="{555F7C73-6D1D-4369-A21B-6E0086E74D72}" ShortID="977052051">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvStart1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvStart1" ID="{555F7C73-6D1D-4369-A21B-6E0086E74D72}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvStart2" ID="{0D66F408-41BE-4FD6-980B-E2963F7ABCFE}" ShortID="1071387668" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvStart2" ID="{4D380E7E-D30A-4B78-9CA4-9B14011E2980}" ShortID="244258860">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvStart2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvStart2" ID="{4D380E7E-D30A-4B78-9CA4-9B14011E2980}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="ConvButton" ID="{44B85950-7C5F-45B9-BAA0-12D9E3FF1399}" ShortID="219583536">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>830</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E549DD22-6E81-435D-9429-150ABDA3E1FA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvButton1" ID="{13E520F8-B4C0-41DB-B9C0-C4F05D7929A0}" ShortID="416480691" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvButton1" ID="{3EBEDC42-E0DA-4F51-857F-4B83A62C7BFF}" ShortID="9437697">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvButton1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvButton1" ID="{3EBEDC42-E0DA-4F51-857F-4B83A62C7BFF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvButton2" ID="{A24331A0-A079-4655-AB82-B58D167CABBD}" ShortID="841993301" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvButton2" ID="{BE2A51A5-60C2-4780-B21B-9625BB6F3C6A}" ShortID="1017055224">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvButton2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvButton2" ID="{BE2A51A5-60C2-4780-B21B-9625BB6F3C6A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="ConvStop" ID="{CAF0F987-C722-4F34-B80C-77C91AEA93A0}" ShortID="124497078">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvStop1" ID="{AA170127-E604-4F54-B3EF-09C65C10C9F5}" ShortID="666195740" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvStop1" ID="{36AA5A49-3873-4B0D-A642-CEAA33F7ECD9}" ShortID="546472802">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvStop1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvStop1" ID="{36AA5A49-3873-4B0D-A642-CEAA33F7ECD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserEyeSurgery_Assets_wav_ConvStop2" ID="{8EA1D8C0-B433-4FF5-89D3-3FE8CDF103B0}" ShortID="128120695" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserEyeSurgery_Assets_wav_ConvStop2" ID="{8F2C8EAD-047F-491F-AC95-25AFF65092C1}" ShortID="719683217">
+											<Language>SFX</Language>
+											<AudioFile>LaserEyeSurgery_Assets_wav_ConvStop2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserEyeSurgery_Assets_wav_ConvStop2" ID="{8F2C8EAD-047F-491F-AC95-25AFF65092C1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{26FCC3D5-79EE-4F3C-B959-E123420AA8D4}" ShortID="660204513">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="DingSound" ID="{87917E61-4CAB-4BC3-85FE-884095B639CD}" ShortID="415723628" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B7B5276A-D57A-4135-88F6-82CCAC5E122C}"/>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{43A9D5D2-2113-4125-A81F-3DB1019C56B3}" ShortID="439459249">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="CompletedLimbs" ID="{E4615EA2-E753-4917-A033-0EF5DE05B823}" WorkUnitID="{8A01E602-EA28-446A-99A8-3ACCCEFBB618}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{36515E59-7F57-4685-B0C8-577CD02DB15F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>1000</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_Ding" ID="{9E56908D-E7FF-4209-9851-599162F566DD}" ShortID="97804111">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_Ding.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_Ding" ID="{9E56908D-E7FF-4209-9851-599162F566DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PopSound" ID="{7488BB0D-1C65-4037-847B-5E8260E8701B}" ShortID="582961547" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{2B6A72CB-D48A-427F-A80D-8782E14090C5}" ShortID="548894985">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Combo" ID="{CB0A41A2-2D17-4C58-9DE2-FE3DF77B535A}" WorkUnitID="{8A01E602-EA28-446A-99A8-3ACCCEFBB618}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{95742676-6F4F-452E-A880-E611E6613AA9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>12</XPos>
+														<YPos>700</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaserEyeSurgery_Assets_wav_Pop" ID="{416F71EF-2FFE-414F-9490-199A33704FAC}" ShortID="228050223">
+									<Language>SFX</Language>
+									<AudioFile>LaserEyeSurgery_Assets_wav_Pop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="LaserEyeSurgery_Assets_wav_Pop" ID="{416F71EF-2FFE-414F-9490-199A33704FAC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

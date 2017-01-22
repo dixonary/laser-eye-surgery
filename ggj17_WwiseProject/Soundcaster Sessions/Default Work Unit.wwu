@@ -22,8 +22,20 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<ObjectRef Name="ConvOn" ID="{E88FE230-6DD7-44D1-99FB-98D0E3A829AF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ConvOff" ID="{505766AD-B3C2-44E5-9913-456358C43F83}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ding" ID="{5C459EC8-B51A-40EC-A4DA-6768046BE080}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -54,6 +66,14 @@
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
 							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="CompletedLimbs" ID="{E4615EA2-E753-4917-A033-0EF5DE05B823}"/>
+							<Value>7.41496598639456</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Combo" ID="{CB0A41A2-2D17-4C58-9DE2-FE3DF77B535A}"/>
+							<Value>12</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>

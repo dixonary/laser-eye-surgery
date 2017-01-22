@@ -171,6 +171,110 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ConvOn" ID="{E88FE230-6DD7-44D1-99FB-98D0E3A829AF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FA598BB9-83A6-46AB-A4CC-7004C2438CDB}" ShortID="235238886" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{47F1B751-D63D-4AB1-9809-B63E1F7E8C7E}" Global="false">
+									<ObjectRef Name="ConvStart" ID="{0F91C9F7-FA78-4E3D-AFEA-A994442B1449}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{A26BD22D-DFFC-4D59-BC12-C32F4B1A4EDA}" ShortID="803353690" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{496962DB-26B1-424B-888F-7A2194AF67A2}" Global="false">
+									<ObjectRef Name="ConvButton" ID="{44B85950-7C5F-45B9-BAA0-12D9E3FF1399}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{A53B0FCE-3398-4562-885E-E0F7B26F8EBE}" ShortID="671334959" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E6A3C813-882C-4044-A819-0F6997390917}" Global="false">
+									<ObjectRef Name="ConvBeltLoop" ID="{E016B86F-E6D2-42F1-96A3-A16B3EEBE47F}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{0184ACD5-7531-45BF-9D1E-7C5C1F1F176F}" ShortID="830678209" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C7F5E65B-47BB-458C-9264-63C442488341}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{F539373C-883D-4547-821A-0A1CD5AA890E}" Global="false">
+									<ObjectRef Name="ConvScrapeOrno" ID="{5988BA3C-2B0F-4714-B36B-2E9BA3774688}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ConvOff" ID="{505766AD-B3C2-44E5-9913-456358C43F83}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{F170BED0-FBC6-458C-B3CE-3138A631F1B5}" ShortID="347289220" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{9E296558-59D7-4971-AB0B-0F7EC3A7724E}" Global="false">
+									<ObjectRef Name="ConvBeltLoop" ID="{E016B86F-E6D2-42F1-96A3-A16B3EEBE47F}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{5F53745C-A2CD-4C84-BBC4-6A6087C555A0}" ShortID="117884342" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7BAB4863-CB6F-41BD-A522-6136D149D49A}" Global="false">
+									<ObjectRef Name="ConvButton" ID="{44B85950-7C5F-45B9-BAA0-12D9E3FF1399}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{FE0D3118-526F-4146-9307-F8C3DE31AB09}" ShortID="424215561" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6B8ABA6F-477C-44B7-8166-443695C2257C}" Global="false">
+									<ObjectRef Name="ConvStop" ID="{CAF0F987-C722-4F34-B80C-77C91AEA93A0}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{FA80282E-5653-4416-A2C6-DD3DFB56C1C8}" ShortID="1049712213" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9B9C847E-4BED-4C6E-B29E-16DD29FADB9C}" Global="false">
+									<ObjectRef Name="ConvScrapeOrno" ID="{5988BA3C-2B0F-4714-B36B-2E9BA3774688}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ding" ID="{5C459EC8-B51A-40EC-A4DA-6768046BE080}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8DD4D85A-761D-4A98-A794-EA2193D3FDFF}" ShortID="257560221" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DF3F78F5-5FF3-4BF7-9960-9911355183CF}" Global="false">
+									<ObjectRef Name="DingSound" ID="{87917E61-4CAB-4BC3-85FE-884095B639CD}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pop" ID="{74F8EF27-27AD-4A25-8979-B8E0111E9023}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EA486178-D713-4C00-B4A0-3D5E081F54F0}" ShortID="67456774" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A3DBE146-23A3-440F-A1A3-DF7554629B61}" Global="false">
+									<ObjectRef Name="PopSound" ID="{7488BB0D-1C65-4037-847B-5E8260E8701B}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
