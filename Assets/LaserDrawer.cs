@@ -5,6 +5,7 @@ using Tobii.EyeTracking;
 using System.Linq;
 using MidiJack;
 
+[RequireComponent (typeof (MeshFilter))]
 public class LaserDrawer : MonoBehaviour {
     
     private Queue<Vector2> _queue;
