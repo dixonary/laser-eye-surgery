@@ -16,10 +16,11 @@ public class Wound : MonoBehaviour {
     float _maxSplitsPerUnitLength = 2f;
     float _maxWobbleAmount = 1f;
     float _minimumWoundLength = 4f;
-    List<Vector2> _woundLine;
+    List<Vector3> _woundLine;
 
     /* Hitbox generation */
     float _hbLength = 0.2f;
+    List<WoundHitbox> _hitboxes = new List<WoundHitbox>();
 
     Dictionary<string, List<Vector3>> _baseLines = new Dictionary<string, List<Vector3>>()
     {
@@ -44,17 +45,17 @@ public class Wound : MonoBehaviour {
     void Start () {
         //_meshFilter = GetComponent<MeshFilter>();
 
-        var _woundLine = wobblify(shorten(_baseLines[partName]));
+        _woundLine = wobblify(shorten(_baseLines[partName]));
 
         _line = GetComponent<LineRenderer>();
 
-        _line.numPositions = _baseLines[partName].Count;
+        _line.numPositions = _woundLine.Count;
         _line.startColor = _line.endColor = Color.black;
-        _line.SetPositions(_woundLine.ToArray());
+        //_line.SetPositions(_woundLine.ToArray());
         _line.widthMultiplier = _baseLineWidth;
         _line.useWorldSpace = false;
 
-        void generateHitboxes();
+        generateHitboxes();
 	}
 
     // Return a random shortening of a linestrip
@@ -178,15 +179,22 @@ public class Wound : MonoBehaviour {
                 numHbs = 1;
             }
 
-            //l.
+            var angle = (float)(Math.Atan2(l.y, l.x) * 180 / Math.PI);
 
             var dr = l / numHbs;
             for (int j = 0; j < numHbs; ++j)
             {
                 var hb = new GameObject();
-                hb.AddComponent<WoundHitbox>();
-                hb.
+
+                var pos = p + (j + 0.5f) * dr;
+                pos.z = -1;
+
+                var whb = hb.AddComponent<WoundHitbox>();
                 hb.transform.parent = transform.parent;
+                hb.transform.localPosition = pos;
+                hb.transform.localScale = new Vector3(lineLength / numHbs, 0.1f, 1);
+                hb.transform.localEulerAngles = new Vector3(0, 0, angle);
+                _hitboxes.Add(whb);
             }
         }
     }    

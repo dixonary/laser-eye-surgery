@@ -55,12 +55,12 @@ public class PartGen : MonoBehaviour {
         //var polygon = gameObject.AddComponent<PolygonCollider2D>();
 
         var woundObject = new GameObject();
+        woundObject.transform.parent = transform;
         //woundObject.AddComponent<MeshFilter>(); // This might happen automatically because of Wound's RequireComponent?
         var woundComponent = woundObject.AddComponent<Wound>();
         woundComponent.partName = part;
         //woundComponent.generateWoundWithin(polygon);
 
-        woundObject.transform.parent = transform;
 
         transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
         transform.localPosition = new Vector3(0f, 0f, 1.0f);
