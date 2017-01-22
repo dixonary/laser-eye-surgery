@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2613220256	FleshOff			\Default Work Unit\FleshOff	
 	2665135698	ConvOff			\Default Work Unit\ConvOff	
 	3636387825	LaserOn			\Default Work Unit\LaserOn	
+	3805681205	StopTitle			\Default Work Unit\StopTitle	
 	4104583540	ConvOn			\Default Work Unit\ConvOn	
 
 State Group	ID	Name			Wwise Object Path	Notes
@@ -29,6 +30,12 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	967572884	Modulator LFO (Custom)				
 	1028213016	Modulator LFO (Custom)				
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	2886307548	MusicBus			\Default Work Unit\Master Audio Bus\MusicBus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3803850708	SFXBus			\Default Work Unit\Master Audio Bus\SFXBus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9437697	LaserEyeSurgery_Assets_wav_ConvButton1	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_ConvButton1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvButton\LaserEyeSurgery_Assets_wav_ConvButton1		156132
