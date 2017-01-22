@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1681803181	EndMusic			\Default Work Unit\EndMusic	
+	2191159630	TitleMusic			\Default Work Unit\TitleMusic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3103015060	MusicStates			\Default Work Unit\MusicStates	
+
+State	ID	Name	State Group			Notes
+	565529991	Final	MusicStates			
+	748895195	None	MusicStates			
+	931160808	Third	MusicStates			
+	998496889	First	MusicStates			
+	3476314365	Second	MusicStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	308635872	Progress			\Default Work Unit\Progress	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	233949171	LaserEyeSurgery_Assets_wav_Countdown	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_Countdown_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\EndMusic\FirstPlaylist\FirstSection_01\LaserEyeSurgery_Assets_wav_Countdown		4510808
+	963156881	LaserEyeSurgery_Assets_wav_Theme	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Windows\SFX\LaserEyeSurgery_Assets_wav_Theme_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\TitleMusic\MainLoop\LaserEyeSurgery_Assets_wav_Theme		6474028
+
