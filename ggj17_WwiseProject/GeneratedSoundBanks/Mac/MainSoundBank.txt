@@ -3,11 +3,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	763008157	LaserOff			\Default Work Unit\LaserOff	
 	1081563622	Pop			\Default Work Unit\Pop	
 	1316191055	StartAmbience			\Default Work Unit\StartAmbience	
+	1681803181	EndMusic			\Default Work Unit\EndMusic	
 	2396968165	Ding			\Default Work Unit\Ding	
 	2613220256	FleshOff			\Default Work Unit\FleshOff	
 	2665135698	ConvOff			\Default Work Unit\ConvOff	
 	3636387825	LaserOn			\Default Work Unit\LaserOn	
 	4104583540	ConvOn			\Default Work Unit\ConvOn	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3103015060	MusicStates			\Default Work Unit\MusicStates	
+
+State	ID	Name	State Group			Notes
+	565529991	Final	MusicStates			
+	748895195	None	MusicStates			
+	931160808	Third	MusicStates			
+	998496889	First	MusicStates			
+	3476314365	Second	MusicStates			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1389571455	CompletedLimbs			\Default Work Unit\CompletedLimbs	
@@ -29,6 +40,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	185554031	LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\Renders\LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine_F4DAC3C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserAlign\LaserAlign_Hi\LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine		52176
 	228050223	PopSound	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\LaserEyeSurgery_Assets_wav_Pop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\PopSound		8012
 	230896023	LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\Renders\LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine_9A45E50D.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserAlign\LaserAlign_Hi\LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine		35796
+	233949171	LaserEyeSurgery_Assets_wav_Countdown	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\LaserEyeSurgery_Assets_wav_Countdown_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\EndMusic\FirstPlaylist\FirstSection_01\LaserEyeSurgery_Assets_wav_Countdown		4510808
 	244258860	LaserEyeSurgery_Assets_wav_ConvStart2	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\LaserEyeSurgery_Assets_wav_ConvStart2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Conveyor\ConvStart\LaserEyeSurgery_Assets_wav_ConvStart2		62420
 	294391593	LaserLoopBuzz_End	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\Renders\LaserEyeSurgery_Assets_wav_LaserLoop_361E6F44.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserLoop\LaserLoopBuzz_End		43120
 	296184281	LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine	Y:\Sound & Music Projects\2017\ggj17\ggj17_WwiseProject\.cache\Mac\SFX\Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine_1169A9BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\LaserAlign\LaserAlign_Hi\LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine		46808
