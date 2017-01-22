@@ -34,7 +34,7 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="PopSound" ID="{7488BB0D-1C65-4037-847B-5E8260E8701B}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}"/>
+							<ObjectRef Name="Pop" ID="{74F8EF27-27AD-4A25-8979-B8E0111E9023}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>

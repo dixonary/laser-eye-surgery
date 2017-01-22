@@ -10,14 +10,6 @@
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="4"/>
 							</PropertyList>
-							<ChildrenList>
-								<ControlSurfaceBinding Name="Binding" ID="{300AFF83-EE5D-493B-86D3-7CB502C0A7DC}">
-									<PropertyList>
-										<Property Name="TargetName" Type="string" Value="PassMidiNote"/>
-										<Property Name="TargetType" Type="int16" Value="1"/>
-									</PropertyList>
-								</ControlSurfaceBinding>
-							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 						<ControlSurfaceBindingGroup Name="View Groups" ID="{4BDADD48-B2CF-4DC6-90FB-45FC798460DA}">
 							<PropertyList>

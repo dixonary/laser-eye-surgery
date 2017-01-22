@@ -22,12 +22,17 @@
 				<Property Name="GenerateSoundBanks\SelectedPlatforms" Type="string" Value="EquA2EtotUOA0VUD4LElSYwC6UZRIcRJiQei4xc3rPc="/>
 				<Property Name="GenerateSoundBanks\SelectedSoundBanks" Type="string" Value="RkXlZ2W3IUK9qA1xpxJAIQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Interactive Music\{1CA2A02B-E8DD-47C5-A320-2AEE2248B3BA} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPx9woByS7kBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\{8682B20A-065F-4031-B156-DD1C969E1B6D} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPx9woByS7kBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\Watches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
+				<Property Name="Music Transition List\{342B6DBF-DBB5-4F70-866B-12B2E575DE36}\Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{47CBE2B8-7ECF-43BE-8FCC-83623BB380FE}\Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{C4BBE976-8C5D-410B-B3D1-86A9F81A4F80}\Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_11_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_12_1" Type="string" Value=""/>
