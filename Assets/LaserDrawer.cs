@@ -16,7 +16,7 @@ public class LaserDrawer : MonoBehaviour {
     // Use this for initialization
     void Start() {
         _queue = new Queue<Vector2>();
-        gameObject.GetComponent<Renderer>().material.color = new Color(1, 0.2f, 1);
+        gameObject.GetComponent<Renderer>().material.color = new Color(1, 0, 0);
 
     }
 
