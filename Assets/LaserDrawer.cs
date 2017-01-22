@@ -13,14 +13,13 @@ public class LaserDrawer : MonoBehaviour {
     private Vector2 _avg;
     private Vector2 _lerpPoint;
 
-
     /* Aim circle */
     GameObject _aimObject;
     public float _aimRadius = 0.001f;
 
     void Start() {
         _queue = new Queue<Vector2>();
-        gameObject.GetComponent<Renderer>().material.color = Color.red;
+        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>("red_mat");
 
         _aimObject = new GameObject();
         _aimObject.transform.localScale = new Vector3(_aimRadius * 2, _aimRadius * 2, 1);
