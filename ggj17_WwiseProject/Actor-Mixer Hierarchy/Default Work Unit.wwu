@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="FleshSearLoop" ID="{5FFED15A-8775-4601-A365-FEB4BFE91886}" ShortID="72524338" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D028F83A-4FC3-4FCE-B0BA-887CB1D7E577}"/>
@@ -53,8 +56,12 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

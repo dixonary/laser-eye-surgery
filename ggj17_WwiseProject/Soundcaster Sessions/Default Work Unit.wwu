@@ -14,8 +14,16 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<ObjectRef Name="FleshOn" ID="{C494C34C-612C-47C1-A91C-7A1803562AA1}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FleshOff" ID="{75567826-3954-4D7B-84E2-A42D5CA71BF8}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartAmbience" ID="{1E2B95DA-1EC0-4E6E-AC3C-A9C136722EFF}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>/Users/Will/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Sound &amp; Music Projects/2017/ggj17/ggj17_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Will/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Sound &amp; Music Projects/2017/ggj17/ggj17_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Will/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Sound &amp; Music Projects/2017/ggj17/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Will/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Sound &amp; Music Projects/2017/ggj17/ggj17_WwiseProject/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainSoundBank</ObjectPath>
+			<ShortName>MainSoundBank</ShortName>
+			<Path>MainSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3636387825" Name="LaserOn" ObjectPath="\Events\Default Work Unit\LaserOn"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="52138214" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_FleshSearLoop.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_FleshSearLoop_9E69E797.wem</Path>
+				</File>
+				<File Id="141200989" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_LoWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign3_LoWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="165827756" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign1_LoWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign1_LoWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="185554031" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign1_HiWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="230896023" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign2_HiWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="296184281" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign3_HiWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="321012734" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno2.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_SearOrno2_9E69E797.wem</Path>
+				</File>
+				<File Id="457644236" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno3.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_SearOrno3_9E69E797.wem</Path>
+				</File>
+				<File Id="501026287" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserAlign2_LoWhine.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserAlign2_LoWhine_9E69E797.wem</Path>
+				</File>
+				<File Id="548200729" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoop.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoop_9E69E797.wem</Path>
+				</File>
+				<File Id="823169246" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno4.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_SearOrno4_9E69E797.wem</Path>
+				</File>
+				<File Id="929218250" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_LaserLoopClicks.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_LaserLoopClicks_9E69E797.wem</Path>
+				</File>
+				<File Id="1024009313" Language="SFX">
+					<ShortName>Renders\LaserEyeSurgery_Assets_wav_SearOrno1.wav</ShortName>
+					<Path>SFX/Renders/LaserEyeSurgery_Assets_wav_SearOrno1_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
