@@ -42,12 +42,16 @@
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="EndMusic" ID="{20623EE7-A8EB-4058-B7F4-4F8487ADA177}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
-							<Position X="4" Y="1"/>
+							<ObjectRef Name="TitleMusic" ID="{899331C4-303C-492E-B261-5D2C52656647}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="TitleMusic" ID="{899331C4-303C-492E-B261-5D2C52656647}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<ObjectRef Name="StopTitle" ID="{2B067459-C58E-48FB-85B7-3D8994D915D3}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
 							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="EndMusic" ID="{20623EE7-A8EB-4058-B7F4-4F8487ADA177}" WorkUnitID="{8A6EE433-19E8-4EFF-8834-1AC6A2DB1E79}"/>
+							<Position X="5" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

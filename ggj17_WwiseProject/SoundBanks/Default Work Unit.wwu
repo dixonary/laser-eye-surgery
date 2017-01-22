@@ -3,12 +3,16 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{381DAC82-4B23-4C2F-8DD4-CCE8CD0910FF}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="MainSoundBank" ID="{67E54546-B765-4221-BDA8-0D71A7124021}">
+				<SoundBank Name="SFXBank" ID="{67E54546-B765-4221-BDA8-0D71A7124021}">
 					<ObjectInclusionList>
-						<ObjectRef Name="EndMusic" ID="{C93FAE78-D012-4066-A439-D269D4AF4228}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MusicBank" ID="{DC81198B-4C1F-4413-860B-A607A3EEB051}">
+					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="TitleMusic" ID="{2E6AE3B2-73B5-4DFA-98BE-FBA0915A3923}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
