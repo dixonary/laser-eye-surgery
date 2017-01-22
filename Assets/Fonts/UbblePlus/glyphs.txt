@@ -1,0 +1,12 @@
+png glyphs order
+
+ !"#$%&'()*+,-./
+0123456789:;<=>?
+@ABCDEFGHIJKLMNO
+PQRSTUVWXYZ[\]^_
+`abcdefghijklmno
+pqrstuvwxyz{|}~¶
+ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ
+ÐÑÒÓÔÕÖØÙÚÛÜÝÞ‗א
+בגדהוזחטיךכלםמןנ
+סעףפץצרשתûü‎‏ÿ
