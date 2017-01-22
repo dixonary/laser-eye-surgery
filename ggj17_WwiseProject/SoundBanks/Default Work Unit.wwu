@@ -3,9 +3,11 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{381DAC82-4B23-4C2F-8DD4-CCE8CD0910FF}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="SFXBank" ID="{67E54546-B765-4221-BDA8-0D71A7124021}">
+				<SoundBank Name="MainSoundbank" ID="{67E54546-B765-4221-BDA8-0D71A7124021}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" WorkUnitID="{2A2E83B7-9904-40D8-973D-350026FA97DA}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}" WorkUnitID="{9EB17ED7-4EB0-4597-BB87-69E95C14920A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" WorkUnitID="{6A8C9D5D-4218-49AF-A0C3-2F0A5FDFB3DD}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
